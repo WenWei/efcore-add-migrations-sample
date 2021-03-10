@@ -22,7 +22,7 @@
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
       "environmentVariables": {
-        "ConnectionStrings__SqliteSample": "c:\\temp\\demo3.sqlite3",
+        "ConnectionStrings__SqliteSample": "Data Source=c:\\temp\\demo3.sqlite3",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ConnectionStrings__PostgresqlSample": "Server=localhost;Port=5432;Database=demo3;User Id=postgres;Password=postgres;CommandTimeout=20;Timeout=15;"
       },

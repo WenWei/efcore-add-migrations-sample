@@ -39,14 +39,14 @@ namespace Demo3
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, EntertainmentContext entertainmentContext)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.EnsureMigrationOfContext<EntertainmentContext>();
+            app.EnsureCreatedOfContext<EntertainmentContext>();
 
             app.UseHttpsRedirection();
 
